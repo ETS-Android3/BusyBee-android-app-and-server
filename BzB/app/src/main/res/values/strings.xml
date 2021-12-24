@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">BzB</string>
+    <string name="nav_map">Карта</string>
+    <string name="nav_user">Профиль</string>
+    <string name="err_server">Ошибка подключения к серверу</string>
+    <string name="back_to_map">Вернуться на карту</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Войти</string>
+    <string name="action_register">Регистрация</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">Welcome!</string>
+    <string name="invalid_username">Email адрес введен неправильно</string>
+    <string name="invalid_password">Пароль должен включать не менее 5 символов</string>
+    <string name="password_failed">Неверный пароль, пожалуйста повторите попытку</string>
+    <string name="token_null">Что-то пошло не так</string>
+    <string name="no_such_user">Пользователя с таким именем не найдено! Пожалуйста зарегистрируйтесь</string>
+    <string name="bzb_user_validation">BusyBee вход</string>
+    <string name="action_registration">Зарегистрироваться</string>
+    <string name="bzb_user_registration">BusyBee регистрация</string>
+    <string name="action_out">выйти из учетной записи</string>
+    <string name="action_delete_user">удалить учетную запись</string>
+    <string name="action_change_password">сменить пароль</string>
+    <string name="action_change_password_success">пароль успешно изменен</string>
+    <string name="action_user_deleted_success">пользователь успешно удален</string>
+    <string name="action_user_not_deleted">не удалось удалить пользователя</string>
+    <string name="action_add_order">разместить работу</string>
+    <string name="action_to_my_orders">открыть список моих работ</string>
+    <string name="title_approve">подтверждение действия</string>
+    <string name="up_dialog_logout_msg">вы действительно хотите выйти из аккаунта?</string>
+    <string name="title_logout">выход из аккаунта</string>
+    <string name="default_title">внимание!</string>
+    <string name="default_message">вы действительно хотите сделать это?</string>
+    <string name="action_back">назад</string>
+    <string name="action_cancel">отмена</string>
+    <string name="action_accept">принять</string>
+    <string name="action_forward">дальше</string>
+    <string name="et_eo_hint">опишите что нужно сделать и как с вами связаться</string>
+    <string name="up_dialog_add_order_msg">установить метку здесь?</string>
+    <string name="success_to_add_order">работа успешно добавлена</string>
+    <string name="fail_to_add_order">не удалось добавить заказ</string>
+    <string name="order_date">дата размещения:</string>
+    <string name="order_short_description">краткое описание</string>
+    <string name="is_active">активна</string>
+    <string name="is_not_active">закрыта</string>
+    <string name="order_status">статус работы:</string>
+    <string name="action_back_to_list">назад к списку</string>
+    <string name="edit_text">разрешить редактирование</string>
+    <string name="action_delete">удалить</string>
+    <string name="update_is_ok">данные успешно обновлены</string>
+    <string name="update_bad">обновление завершилось с ошибками.</string>
+    <string name="action_accept_changes">применить исправления</string>
+    <string name="o_dialog_message">вы действительно хотите удалить заявку? Заявка будет удалена окончательно! Для приостановки заявки используйте селектор ниже</string>
+    <string name="o_delete_success">запись удалена</string>
+    <string name="o_delete_fail">ошибка удаления</string>
+    <string name="action_back_to_user_page">в личный кабинет</string>
+    <string name="bzb_change_password_label">Смена пароля</string>
+    <string name="current_password">введите текущий пароль</string>
+    <string name="new_password">введите новый пароль</string>
+    <string name="new_password_confirm">повторите новый пароль</string>
+    <string name="cp_pass_not_equals">пароли не совпадают</string>
+    <string name="confirm_message">для продолжения подтвердите логин и пароль</string>
+
+
+</resources>

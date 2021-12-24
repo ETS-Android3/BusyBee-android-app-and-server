@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColorBlueL"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/primaryColorLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_up_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/empty_profile"
+            app:layout_constraintBottom_toTopOf="@+id/b_up_leave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars"
+            tools:srcCompat="@sample/wohooNew.png" />
+
+        <TextView
+            android:id="@+id/tv_up_accountmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="@color/primaryColorDark"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/iv_up_avatar"
+            app:layout_constraintEnd_toEndOf="@+id/iv_up_avatar"
+            app:layout_constraintStart_toStartOf="@+id/iv_up_avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85" />
+
+        <Button
+            android:id="@+id/b_up_leave"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primaryColor"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/action_out"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="@color/primaryColorBlue"
+            android:textSize="14sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_baseline_logout_24"
+            app:iconTint="@color/primaryColorBlue"
+            app:layout_constraintBottom_toTopOf="@+id/b_up_change_pass"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/b_up_change_pass"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primaryColor"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/action_change_password"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="@color/primaryColorBlue"
+            android:textSize="14sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_baseline_security_24"
+            app:iconTint="@color/primaryColorBlue"
+            app:layout_constraintBottom_toTopOf="@+id/b_up_delete"
+            app:layout_constraintStart_toStartOf="@+id/b_up_leave" />
+
+        <Button
+            android:id="@+id/b_up_delete"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/primaryColor"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/action_delete_user"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="@color/primaryColorBlue"
+            android:textSize="14sp"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_baseline_delete_outline_24"
+            app:iconTint="@color/primaryColorBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/b_up_change_pass" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/b_up_add_order"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/action_add_order"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@color/primaryColorBlue"
+        android:textSize="14sp"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_add_24"
+        app:iconTint="@color/primaryColorBlue"
+        app:layout_constraintBottom_toTopOf="@+id/b_up_to_my_orders"
+        app:layout_constraintEnd_toEndOf="@+id/b_up_to_my_orders"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/b_up_to_my_orders" />
+
+    <Button
+        android:id="@+id/b_up_to_my_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/action_to_my_orders"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@color/primaryColorBlue"
+        android:textSize="14sp"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_view_list_24"
+        app:iconTint="@color/primaryColorBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="414dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_begin="284dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
